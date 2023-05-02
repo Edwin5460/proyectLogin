@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F4F4F4;
+}
+
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+.imagen-formulario {
+    background-image: url('fondo1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('fondo2.png');
+    background-size: cover;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 80px rgba(12, 35, 109, 0.959);
+    padding: 50px;
+    position: relative;
+}
+
+
+
+.texto-formulario h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+
+.texto-formulario p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #747171;
+    margin-bottom: 30px;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.input label {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000000;
+}
+
+
+.input input {
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 18px;
+    background-color: #969696;
+    opacity: 0.5;
+}
+
+.input input::placeholder{
+    color: #FFFFFF; 
+    font-size: 15px;
+    
+}
+
+
+#Contraseña-olvidada {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#Contraseña-olvidada a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #777777;
+    text-decoration: none;
+}
+
+
+.input input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input input[type="submit"]:hover {
+    background-color: rgb(133, 123, 117);
+}
